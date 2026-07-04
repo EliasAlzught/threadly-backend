@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # نسخ الكود
 COPY ./app /code/app
-COPY ./alembic /code/alembic
+
 
 
 EXPOSE 8000
