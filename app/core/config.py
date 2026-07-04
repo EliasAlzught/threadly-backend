@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     DEBUG: bool = True
 
     # Database
-    DATABASE_URL: str = os.getenv("DATABASE_URL", "postgresql://threadly:threadly_dev_password@localhost:5432/threadly_db")
+    DATABASE_URL: str = os.environ.get("DATABASE_URL", "postgresql://threadly:threadly_dev_password@localhost:5432/threadly_db")
 
     # Redis
     REDIS_URL: str = os.getenv("REDIS_URL", "redis://localhost:6379/0")
