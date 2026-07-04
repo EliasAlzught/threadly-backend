@@ -1,0 +1,44 @@
+# FastAPI Core
+fastapi==0.115.0
+uvicorn[standard]==0.32.0
+pydantic[email]==2.9.2
+pydantic-settings==2.5.2
+
+# Database
+sqlalchemy==2.0.35
+asyncpg==0.29.0
+psycopg2-binary==2.9.9
+alembic==1.13.3
+
+# Authentication
+python-jose[cryptography]==3.3.0
+passlib==1.7.4
+bcrypt==4.0.1
+python-multipart==0.0.12
+
+# Redis & Background Jobs
+redis==5.1.1
+celery==5.4.0
+
+# File Storage (MinIO/S3)
+boto3==1.35.36
+minio==7.2.9
+
+# AI/LLM - مجانية
+groq==0.11.0              # API مجاني سريع جداً
+google-generativeai==0.8.3  # Gemini API مجاني
+openai==1.51.2            # ممكن تستخدمه مع Ollama المحلي
+
+# Push Notifications
+firebase-admin==6.5.0     # FCM مجاني
+
+# Email
+aiosmtplib==3.0.2
+jinja2==3.1.4
+
+# WebSockets للـ chat
+websockets==13.1
+
+# Utilities
+python-dotenv==1.0.1
+httpx==0.27.2
